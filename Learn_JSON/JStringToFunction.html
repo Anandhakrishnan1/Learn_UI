@@ -1,0 +1,17 @@
+<html>
+    <head> 
+        <title>Converting string into a function
+        </title>
+    </head>
+    
+    <body>
+        <h3>Converting string into a function </h3>
+        <p id="demo"> </p>
+        <script>
+            const txt = '{"Name":"Anandhakrishnan", "Age": " function() { return 22; }", "City":"Alappuzha"}'
+            const myObj = JSON.parse(txt);
+            myObj.Age = eval(" (" + myObj.Age + ") ");
+            document.getElementById("demo").innerHTML = myObj.Name + " , of age  " + myObj.Age();
+        </script>
+    </body>
+</html>

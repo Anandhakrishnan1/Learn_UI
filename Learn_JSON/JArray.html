@@ -1,0 +1,16 @@
+<html>
+    <head> 
+        <title>Parsing a JSON Array
+        </title>
+    </head>
+    
+    <body>
+        <h3>Parsing a JSON Array </h3>
+        <p id="demo"> </p>
+        <script>
+            const txt = '["Ford", "Maruthi","hyundai"]'
+            const myArr = JSON.parse(txt);
+            document.getElementById("demo").innerHTML = myArr[1];
+        </script>
+    </body>
+</html>

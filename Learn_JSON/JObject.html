@@ -1,0 +1,17 @@
+<html>
+    <head> 
+        <title>Access a JavaScript object</title>
+    </head>
+    
+    <body>
+        <h3>Access a JavaScript object</h3>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            const myObj = {Name:"Anandhakrishnan", Age: 22, City:"Alappuzha"};
+            myObj.Name = "Anandhu";
+            document.getElementById("demo1").innerHTML = myObj.Name;
+            document.getElementById("demo2").innerHTML = myObj["Age"];
+        </script>
+    </body>
+</html>
