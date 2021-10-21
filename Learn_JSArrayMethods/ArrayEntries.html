@@ -1,0 +1,15 @@
+<html>
+    <head><title>Array Entries</title></head>
+    <body>
+        <h3>Array Entries</h3>
+        <p id="demo"></p>
+        <script>
+            const array1 = ["a", "b", "c", "d","e"];
+            console.log(array1);
+            const iterator1 = array1.entries();
+            // console.log(iterator1.next().value);
+            value = iterator1.next().value;
+            document.getElementById("demo").innerHTML = value;
+        </script>
+    </body>
+</html>

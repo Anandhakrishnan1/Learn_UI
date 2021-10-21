@@ -1,0 +1,14 @@
+<html>
+    <head><title>Array Every</title></head>
+    <body>
+        <h3>Array every</h3>
+        <p id="demo"></p>
+        <script>
+            const isBelowThreshold = (currentValue) => currentValue < 40;
+            const array1 = [1, 30, 39, 29, 10, 13];
+            console.log(array1.every(isBelowThreshold));
+            value = array1.every(isBelowThreshold); 
+            document.getElementById("demo").innerHTML = value;
+        </script>
+    </body>
+</html>
