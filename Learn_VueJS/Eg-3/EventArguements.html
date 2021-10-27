@@ -21,6 +21,12 @@
       <button v-on:click="addCounter(5)">Increment 5</button>
       <button v-on:click="reduceCounter(5)">Decrement 5</button>
       <p>Result: {{ counter }}</p>
+      <input type="text" v-on:input="setName">
+      <p>Welcome {{ name }}</p>
+      <form v-on:submit.prevent="submitForm">
+        <input type="text">
+        <button>Sign Up</button>
+      </form>
     </section>
   </body>
 </html>
